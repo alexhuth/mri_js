@@ -1,0 +1,28 @@
+.axis-grid line {
+	stroke: #aaa;
+	stroke-dasharray: 1;
+}
+
+.hidden {
+	visibility:  hidden;
+}
+
+#image_text {
+	display: inline-block;
+	width: 400px;
+	vertical-align: top;
+}
+
+#net_text {
+	display:  inline-block;
+	width: 200px;
+}
+
+#kspace_text {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+}
+#buttons {
+	padding: 15 0 15 350;
+}

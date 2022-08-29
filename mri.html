@@ -1,0 +1,32 @@
+<head>
+<link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/colorbrewer/colorbrewer.css"/>
+<link type="text/css" rel="stylesheet" href="mri.css"/>
+</head>
+<body>
+<button onclick="javascript:stop()">Stop</button>
+<button onclick="javascript:start()">Start</button>
+<button onclick="javascript:excite()">Excite</button>
+<button onclick="javascript:constant()">Constant</button>
+<div id="buttons">
+	<button onclick="javascript:xgradient(-10)">-X Gradient</button>
+	<button onclick="javascript:xgradient(0)">X Gradient Off</button>
+	<button onclick="javascript:xgradient(10)">+X Gradient</button>
+	<div></div>
+	<button onclick="javascript:ygradient(-10)">-Y Gradient</button>
+	<button onclick="javascript:ygradient(0)">Y Gradient Off</button>
+	<button onclick="javascript:ygradient(10)">+Y Gradient</button>
+</div>
+<!-- <canvas id="canvas" width="20" height="20" style="visibility:hidden"></canvas> -->
+<div class="chart"></div>
+<div id="image_text">
+	Net magnetization vector within each voxel. The length of each vector is the proton density in that voxel.
+</div>
+<div id="net_text">
+	Total magnetization: the sum of all spins over all voxels. This is what the scanner actually measures!
+</div>
+<div id="kspace_text">
+	Where you are in k-space. Total magnetization is recorded at each point you visit.
+</div>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="mri.js"></script>
+</body>
